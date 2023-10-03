@@ -4,3 +4,5 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 Worker prezident = new President();
 prezident.Print();
+Worker engineer = new Engineer();
+engineer.Print();
