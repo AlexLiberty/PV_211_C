@@ -27,7 +27,7 @@ namespace Prakt_05_10
         }
         ~Play()
         {
-            Console.WriteLine(" ifinalize", _name, _nameplay, _genre, _year);
+            Console.WriteLine($" Finalize: { _nameplay}");
             Console.Beep();
         }
 
