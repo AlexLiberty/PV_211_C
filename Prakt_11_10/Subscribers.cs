@@ -15,5 +15,6 @@ namespace Prakt_11_10
             Name = name;
             Age = age;
         }
+
     }
 }
