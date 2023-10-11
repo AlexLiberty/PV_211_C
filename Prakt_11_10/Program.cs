@@ -3,6 +3,8 @@
 Subscribers sub = new Subscribers("Oleg", 30);
 
 MyButton button = new MyButton("Blue", "Click Me", 40, 100);
-button.OnClickButton += MyButton.ButtonClick;
 
+button.OnClickButton += button.ButtonClick; 
+button.Click(sub);
+button.OnClickButton -= button.ButtonClick;
 button.Click(sub);

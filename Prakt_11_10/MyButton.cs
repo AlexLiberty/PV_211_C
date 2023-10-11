@@ -20,17 +20,17 @@ namespace Prakt_11_10
             Weight = weight;
         }
 
-        public event Action<Subscribers> OnClickButton;
+        public event Action<Subscribers,string, string, int, int> OnClickButton;
 
         public void Click(Subscribers subscriber)//подія
         {
             Console.WriteLine("Button was clicked");
-            OnClickButton?.Invoke(subscriber);
+            OnClickButton?.Invoke(subscriber, Color, Text, Рeight, Weight);
         }
 
-        internal static void ButtonClick(Subscribers subscriber)//дія
+        public void ButtonClick(Subscribers subscriber, string color, string text, int peight, int weight)//дія
         {
-            Console.WriteLine($"Button on click for {subscriber.Name}, Age: {subscriber.Age}");
+            Console.WriteLine($"Button Color: {Color}, Text: {Text}, Height: {Рeight}, Weight: {Weight} on click for {subscriber.Name}, Age: {subscriber.Age}");
         }
     }
 }
