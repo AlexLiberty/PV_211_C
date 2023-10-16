@@ -34,11 +34,13 @@ namespace DZ_13
         {
             using (StreamReader sr = new StreamReader(filename))
             {
+                Console.WriteLine();
+                Console.WriteLine($"Інформація завантажена з файлу: {filename}");
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
                     Console.WriteLine(line);
-                }
+                }                
             }
         }
 
